@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задача14</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Refresh" >
+    <meta name="Author" content="I Kritski" lang="ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/normalize1.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+      <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+	  <link href="css/style8.css" rel="stylesheet">
+    <style>
+     body {
+           margin: 0;
+           display: flex;
+           height: 100vh;  
+           flex-direction: column; /*сверху вниз*/
+        }
+   main {
+          flex-basis: 0%; /*размер элемента*/
+          flex-shrink: 1; /*коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам*/
+          flex-grow: 1; /*Определяет, сколько пространства может занимать флекс внутри контейнера*/
+           margin: 0;
+        }
+        h3 {
+             overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто*/
+             text-overflow: ellipsis;/*Текст обрезается и к концу строки добавляется многоточие.*/
+             white-space: nowrap; /*текст одной строкой*/
+             font: 1.8em 'Raleway';
+        }
+            nav {
+        list-style: none; /*убрать стили*/
+        display: flex;
+        }
+                 nav li {
+         margin: 0 15px;
+        }   
+             a {
+        color: inherit;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none; /* opacity: 0.9;*/
+        }
+    .conteiner1 {
+           display: inline-flex;
+           flex-wrap: wrap; /* перенос элементов если не помещаются в один ряд*/
+           justify-content: space-around; /* распределение по оси горизонт*/
+           align-items: center;
+           flex-direction: row;
+           padding: 5px;
+           min-height: 65px;
+           width: 100%;
+        }
+    .name  {
+           display: inline-flex;
+           height: 45px;
+           padding:  5px 2px 0 0;
+           align-items: center;
+           font: 1.5em 'Raleway';
+           color: #669999;
+        }
+   .menu1   {
+           display: inline-flex;
+           height: 45px;
+           padding:  8px 2px 0 0;
+           align-items: center;
+           font: 1em 'Raleway' ;
+           color: #B3B3B3;
+        }
+   .conteiner2 {
+       display: flex;
+           width: 100%; height: 340px;
+           border: 1px solid #FFFFFF;
+           background-size: cover;
+           justify-content: center; /* Выравнивание текста по горизонтали */
+           text-align: center; /* Выравнивание текста по горизонтали */
+        }
+   .conteiner2 h1 {
+           margin: 80px 0 40px 0; 
+           font: 3em 'Raleway';
+           color: #FFFFFF;
+        }
+   .bot1 {
+           width: 230px; height: 51px;
+           border-radius:61px;
+           font: 1em 'Raleway';
+           background: #FF6699;
+           border: solid #FF6699;
+           color: #FFFFFF;
+        }
+    h2 {
+          text-align: center;
+          font: 1.8em 'Raleway';
+        }
+    p {
+          font: 1em 'Raleway';
+          color: #B3B3B3;
+        }
+    .inf {
+          display: flex;
+          height: 220px; 
+          flex-direction: rov;
+          padding: 3px;
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          margin: 1px;
+        }
+    .inf1{
+           width: 22%; min-height: 40px;
+           padding: 3px;
+           color: #B3B3B3;
+          margin: 1px;
+        }
+    i {
+          color: #999999;
+          padding: 20px;
+               }
+    .conteiner3 {
+            padding: 40px 0 0 0 ;
+            background: #F5F5F5;
+            min-height: 650px;
+        }
+    .blog1 {
+            position: relative;    
+            display: block;
+            background-image: url(img/img1.jpg);
+            margin: 2px;
+            width: 70%; max-height: 210px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+    .blog2 {
+            position: relative;    
+            display: block;
+            background-image: url(img/img2.jpg);
+            margin: 2px;
+            width: 70%; max-height: 210px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+            
+    .blogt {
+            position: relative;    
+            display: block;   
+            margin-left: 320px;   
+        }
+    footer {
+            background: #38404B;
+            padding: 10px;
+            color: #B3B3B3;
+        }
+    footer>p {color: #B3B3B3;}
+    .menu2 {
+           display: flex;
+           flex-direction: rov;
+           flex-wrap: wrap;
+           justify-content: center;
+           text-align: center;
+           align-items: center;
+           margin: 2px;
+           color: #B3B3B3;
+    }
+    
+    @media screen and (min-width: 220px) and (max-width:420px)
+    {
+    .conteiner1 {
+           flex-direction: column;
+    }
+    .menu1 {
+          background: #87CEEB;
+          border-radius: 3px;
+          font: 1.2em;}
+       
+          
+    .menu1 a {
+        color: #FFFFFF ;
+    }      
+    .name {
+          font: 6px;
+          margin: 10px;
+    }
+    .blogt {
+           margin-left: 1px;
+           color: #808080;
+    }
+   h3, .blogt {
+           overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто*/
+           text-overflow: ellipsis;/*Текст обрезается и к концу строки добавляется многоточие.*/
+          }     
+    .servtext {
+           display: none;
+    }
+    .inf1 {
+          width: 20%; min-height: 40px}
+    .inf {
+          min-height: 40px;    
+     }
+      footer>p {
+          color: red;    
+    }}
+    @media screen and (max-width: 800px) {
+       .blog1, .blog2 {
+         width: 98%;
+         background-image: none;
+    }}
+      </style>
+            </head>
+        <body>
+    <main>
+    <div class="conteiner1">
+        <div class="name">Project Name</div>
+        <div class="menu1">
+             <nav>
+                <li><a href="#" class="menudek">About</a></li>
+                <li><a href="#" class="menudek">Team</a></li>
+                <li><a href="#" class="menudek">News</a></li>
+                <li><a href="#" class="menudek">Contact</a></li>
+              </nav>
+        </div>
+    </div>
+    <div class="conteiner2" style="background-image: url(img/jumbotron.jpg);">
+        <h1 class="textimg">Landing Page Template </h1>
+         <form action="action.php" metod="GET">
+        <button class="bot1" type="button" href="#post" id="test">Go back to the lesson</button>
+            </form>
+            </div>
+                 <h2>Services</h2>
+     <div class="inf">
+        <div class="inf1">
+            <i class="fa fa-tachometer fa-3x" aria-hidden="true" align="center"></i><br>
+            <span class="servtext">phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa</span>
+            </div>
+        <div class="inf1">
+            <i class="fa fa-calendar fa-3x" aria-hidden="true"></i><br>
+            <span class="servtext">phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa</span>
+            </div>
+        <div class="inf1">
+            <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i><br>
+            <span class="servtext">phoncus ut, imperdiet vel venenatis vitae justo ullam dictum felis eu pede mollis pretium massa</span>
+        </div>
+        </div>
+        <div class="conteiner3">
+         <h2>Blog</h2>
+         <br><br>
+         <div class="blog1">
+             <h3 class="blogt">Socis natoque magnis dis valem parturient</h3>
+             <p class="blogt">01.01.2017</p>
+             <p class="blogt">Lenian commodo ligula eget dolor, aenean massa. Cum sociis natoque penatibus et 
+             magnis dis parturient montes, nascetur ridiculus mus donec quam felis ultricies nec pllentesque eu.</p>
+         </div>
+          <div class="blog2">
+             <h3 class="blogt">Socis natoque magnis dis valem parturient</h3>
+             <p class="blogt">31.12.2016</p>
+             <p class="blogt"> Lenian commodo ligula eget dolor, aenean massa. Cum sociis natoque penatibus et 
+             magnis dis parturient montes, nascetur ridiculus mus donec quam felis ultricies nec pllentesque eu.</p>
+         </div>
+     </div>
+    </main>
+    <footer>
+        <h2>Project Name</h2>
+        <div class="menu2">
+            <nav>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+              </nav>
+        </div>
+        <p  align="center">&#169; 2020 I Kr</p>
+    </footer>
+        </body>
+</html>
