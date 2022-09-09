@@ -67,17 +67,8 @@
          </div>
      </div>
     </main>
-    <footer>
-        <h2>Project Name</h2>
-        <div class="menu2">
-            <nav>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-              </nav>
-        </div>
-        <p  align="center">&#169; 2020 I Kr</p>
+    <footer>        
+                <?php include 'footer.php';?>
     </footer>
         </body>
 </html>
