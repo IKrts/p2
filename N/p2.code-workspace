@@ -1,0 +1,57 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\template"
+		},
+		{
+			"path": "..\\..\\tem"
+		},
+		{
+			"path": "..\\..\\arki"
+		},
+		{
+			"path": "..\\..\\fotoform"
+		},
+		{
+			"path": "..\\..\\bdata"
+		},
+		{
+			"path": "..\\..\\newTeg"
+		},
+		{
+			"path": "..\\..\\gl"
+		},
+		{
+			"path": "..\\..\\OZON"
+		},
+		{
+			"path": "..\\..\\OZON1"
+		},
+		{
+			"path": "..\\..\\s2"
+		},
+		{
+			"path": "..\\..\\liza"
+		},
+		{
+			"path": "..\\..\\liza\\css"
+		},
+		{
+			"path": "..\\..\\aperture_site"
+		},
+		{
+			"path": "..\\..\\rf"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "p2",
+		"githubPullRequests.remotes": [
+			"origin",
+			"upstream",
+			"new1"
+		]
+	}
+}
